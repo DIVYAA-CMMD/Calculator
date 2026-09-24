@@ -1,7 +1,7 @@
 // ============================================================
 // CONFIG — change this if your Flask backend runs elsewhere
 // ============================================================
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = "";
 
 // ============================================================
 // GALAXY STAR FIELD GENERATION
