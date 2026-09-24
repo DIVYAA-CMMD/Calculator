@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Galaxy Calculator</title>
+
+<!-- Attractive display + button fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Star / galaxy background layers (filled by JS) -->
+  <div id="galaxy-bg">
+    <div id="milkyway"></div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+
+  <div class="app-wrapper">
+
+    <div class="calculator">
+      <h1 class="title">✦ HOT Calculator ✦</h1>
+
+      <!-- Display -->
+      <div class="display-box">
+        <input type="text" id="result" readonly placeholder="0" />
+      </div>
+
+      <!-- Inputs -->
+      <div class="inputs">
+        <input type="number" id="num1" placeholder="Number 1" />
+        <input type="number" id="num2" placeholder="Number 2" />
+      </div>
+
+      <!-- Operation buttons -->
+      <div class="buttons-grid">
+        <button class="btn" data-op="add">+</button>
+        <button class="btn" data-op="subtract">−</button>
+        <button class="btn" data-op="multiply">×</button>
+        <button class="btn" data-op="divide">÷</button>
+
+        <button class="btn" data-op="square">x²</button>
+        <button class="btn" data-op="cube">x³</button>
+        <button class="btn" data-op="percentage">%</button>
+        <button class="btn" data-op="average">avg</button>
+      </div>
+
+      <button class="clear-btn" id="clearBtn">Clear</button>
+
+      <hr class="divider" />
+
+      <!-- Unit Converter Section -->
+      <div class="converter">
+        <h2 class="sub-title">Unit Converter</h2>
+
+        <input type="number" id="convValue" placeholder="Enter value" />
+
+        <select id="convType">
+          <option value="km_to_m">Kilometers → Meters</option>
+          <option value="m_to_km">Meters → Kilometers</option>
+          <option value="kg_to_g">Kilograms → Grams</option>
+          <option value="g_to_kg">Grams → Kilograms</option>
+          <option value="c_to_f">Celsius → Fahrenheit</option>
+          <option value="f_to_c">Fahrenheit → Celsius</option>
+        </select>
+
+        <button class="btn convert-btn" id="convertBtn">Convert</button>
+      </div>
+
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
