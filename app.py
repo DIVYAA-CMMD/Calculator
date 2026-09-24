@@ -18,7 +18,7 @@ def script():
 
 @app.route("/")
 def home():
-    return "Calculator Backend is Working!"
+    return send_from_directory("frontend", "index.html")
 
 
 
